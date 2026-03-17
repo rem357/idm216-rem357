@@ -260,6 +260,80 @@ body a:active {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+.persona-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.persona-card {
+    display: block;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.persona-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.persona-card {
+    display: block;
+    position: relative;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.persona-card::after {
+    content: "View in Figma";
+    position: absolute;
+    inset: auto 0 0 0;
+    background: rgba(241, 81, 59, 0.9);
+    color: var(--background-color);
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.persona-card:hover::after {
+    opacity: 1;
+}
+
+.persona-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    border-color: var(--title-color);
+}
+
+.persona-card:active {
+    transform: scale(0.99);
+}
+
+@media (max-width: 900px) {
+    .persona-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .persona-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .page {
