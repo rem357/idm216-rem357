@@ -1,24 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pete's Little Lunch Box — Mobile Ordering App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDM 216 – Pete’s Little Lunch Box Case Study</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
-  <h1>Pete's Little Lunch Box — Mobile Ordering App</h1>
+  <header class="banner">
+    <img src="images/banner.jpg" alt="Pete’s Little Lunch Box ordering app interface banner">
 </header>
+s
+  <div class="page">
 
-<main>
+    <header class="case-study-header">
+      <div class="content-wrapper">
+        <p class="eyebrow">IDM 216</p>
+        <h1 class="case-study-title">Pete’s Little Lunch Box Ordering App</h1>
+        <p class="case-study-subtitle">Case Study</p>
+      </div>
+    </header>
 
-  <section id="overview">
-    <h2>(in progress)</h2>
-  </section>
+    <main class="case-study-main">
 
-</main>
+      <!-- Hero Image -->
+      <section class="case-study-section hero-section" id="hero">
+        <div class="content-wrapper">
+          <h2 class="section-title">Hero Image</h2>
 
+          <figure class="media-frame hero-frame">
+            <img src="images/hero-image.jpg" alt="Final interface of the Pete’s Little Lunch Box ordering app" />
+            <figcaption>Insert hero image of the final ordering app interface here.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- The Overview -->
+      <section class="case-study-section" id="overview">
+        <div class="content-wrapper">
+          <h2 class="section-title">The Overview</h2>
+
+          <div class="text-block">
+            <p>
+              Pete’s Little Lunch Box is a well-loved food truck on Drexel’s campus, but it currently doesn’t have a digital ordering system. Customers have to wait in line to browse the menu, decide what they want, and place their order without knowing how long it might take.
+            </p>
+
+            <p>
+              Our team, BARC, set out to turn a previous UX concept into a working, web-based, ordering prototype that would make the process smoother and easier for customers. The final product allows users to browse the menu, customize items, review pricing, move through checkout, and track their order status.
+            </p>
+
+            <p>
+              This was a team project where each member had specific roles. My primary role was Data Architect, and my secondary role was UX Designer. I focused on organizing the project’s internal systems, structuring menu data for development, collaborating on the design system, conducting user testing, and compiling feedback that helped improve the final product.
+            </p>
+          </div>
+
+              <div class="section-media-grid two-up">
+                <figure class="media-frame">
+                  <img src="images/spreadsheet-placeholder.jpg" alt="public-team-website banner" />
+                  <figcaption>team website.</figcaption>
+                </figure>
+              </div>
+
+        </div>
+      </section>
+
+      <!-- The Context and Challenge -->
+      <section class="case-study-section" id="context-and-challenge">
+        <div class="content-wrapper">
+          <h2 class="section-title">The Context and Challenge</h2>
+
+          <section class="subsection">
+            <h3 class="subsection-title">Background / Description / Timeline / Budget / Purpose</h3>
+
+            <div class="text-block">
+              <p>
+                This project was completed in IDM 216 – User Experience Design II as part of a team assignment. The goal was to take a UX concept that had already been designed and turn it into a functioning coded prototype.
+              </p>
+
+              <p>
+                Throughout the term, our team worked through multiple stages of the product process, including planning, organizing project materials, refining the design, running user testing sessions, and implementing the final prototype.
+              </p>
+
+              <p>
+                Since this was a class project, there was no external client or budget. Instead, the goal was to simulate a real-world workflow where each team member had a defined role and contributed to building a working product.
+              </p>
+            </div>
+          </section>
+
+          <section class="subsection">
+            <h3 class="subsection-title">The Problem</h3>
+
+            <div class="text-block">
+              <p>
+                Pete’s Little Lunch Box currently operates without a digital ordering option. Customers have to physically wait in line to browse menu items, customize their food, and place their order.
+              </p>
+
+              <p>This creates a few clear issues:</p>
+
+              <ul class="bullet-list">
+                <li>Long lines during busy hours</li>
+                <li>No way to browse the menu beforehand</li>
+                <li>Limited visibility into wait times</li>
+                <li>A slower and less convenient ordering experience</li>
+              </ul>
+
+              <p>
+                The goal of the project was to design a digital ordering experience that made the process faster, clearer, and easier for users.
+              </p>
+            </div>
+          </section>
+
+          <section class="subsection">
+            <h3 class="subsection-title">Goals &amp; Objectives</h3>
+
+            <div class="text-block">
+              <p>
+                The main goal of the project was to create a working ordering prototype that allowed users to:
+              </p>
+
+              <ul class="bullet-list">
+                <li>Browse menu items digitally</li>
+                <li>Customize their food selections</li>
+                <li>Move through checkout</li>
+                <li>Track their order status</li>
+              </ul>
+
+              <p>
+                Another goal was keeping the team workflow organized. Because the project involved both design and development work, it was important that files, assets, and documentation were structured in a way that everyone could easily access and understand.
+              </p>
+
+              <p>
+                Success for this project meant delivering a working prototype that supported the full ordering flow while incorporating improvements based on user testing.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- The Process and Insight -->
+      <section class="case-study-section" id="process-and-insight">
+        <div class="content-wrapper">
+          <h2 class="section-title">The Process and Insight</h2>
+
+          <div class="text-block">
+            <p>
+              This project was built through collaboration between multiple team members. My work focused mainly on Data Architecture and UX Design, helping support both the structure of the project and the usability of the final product.
+            </p>
+          </div>
+
+          <!-- Data Architect -->
+          <section class="role-section" id="data-architect">
+            <h3 class="role-title">Data Architect</h3>
+
+            <section class="subsection">
+              <h4 class="subsection-title">Information Organization &amp; Documentation</h4>
+              <div class="text-block">
+                <p>
+                  As Data Architect, I was responsible for organizing many of the systems behind the project. I structured and organized our project files within Microsoft Teams so documentation, design files, and development resources were easy for the team to find and use.
+                </p>
+
+                <p>
+                  I also created consistent naming conventions for project files and helped organize the project wiki. This made it easier for the team to keep track of deliverables and reference documentation throughout the project.
+                </p>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <h4 class="subsection-title">Data Structuring for Development</h4>
+              <div class="text-block">
+                <p>
+                  Another important part of my role was preparing the menu data so it could eventually be used during development.
+                </p>
+
+                <p>
+                  I converted the menu content into structured spreadsheets and organized the information into categories and fields that could translate easily into a database structure. This included making sure item names, descriptions, prices, and menu categories were all formatted consistently.
+                </p>
+              </div>
+
+              <div class="section-media-grid two-up">
+                <figure class="media-frame">
+                  <img src="images/spreadsheet-placeholder.jpg" alt="Structured spreadsheets used to organize menu data for development" />
+                  <figcaption>Include picture of spreadsheets.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <h4 class="subsection-title">Asset Management</h4>
+              <div class="text-block">
+                <p>
+                  I also collected and organized all menu item images used in the interface. These assets were clearly labeled and stored in an organized system so they could be easily integrated into the front-end during development.
+                </p>
+              </div>
+
+              <div class="section-media-grid two-up">
+                <figure class="media-frame">
+                  <img src="images/menu-assets-placeholder.jpg" alt="Organized menu item imagery used in the interface" />
+                  <figcaption>Include picture of menu items.</figcaption>
+                </figure>
+              </div>
+            </section>
+          </section>
+
+          <!-- UX Designer -->
+          <section class="role-section" id="ux-designer">
+            <h3 class="role-title">UX Designer</h3>
+
+            <section class="subsection">
+              <h4 class="subsection-title">User Personas</h4>
+              <div class="text-block">
+                <p>
+                  As part of the UX design process, I helped refine the user personas used to guide the project. These personas were based on the types of customers who typically visit food trucks on Drexel’s campus, such as students looking for quick and convenient meal options between classes.
+                </p>
+
+                <p>
+                  Working with the team, I helped adjust the personas so they more accurately reflected the needs and behaviors of our target users. This included identifying common goals such as minimizing wait times, quickly browsing menu options, and customizing orders efficiently. These personas helped guide several design decisions throughout the project, especially when evaluating how intuitive the ordering flow felt for users.
+                </p>
+              </div>
+
+              <div class="section-media-grid two-up">
+                <figure class="media-frame">
+                  <img src="images/personas-placeholder.jpg" alt="User personas created for the Pete’s Little Lunch Box project" />
+                  <figcaption>Include picture of personas.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <h4 class="subsection-title">Team Website</h4>
+              <div class="text-block">
+                <p>
+                  I also helped assist the primary UX designer, Betty, in creating the public-facing team website that introduced our project and documented the work our team completed throughout the term. The website served as a central place to present our concept, explain the ordering experience, and showcase the final prototype.
+                </p>
+
+                <p>
+                  This page helped communicate the project to both instructors and other viewers by clearly outlining our goals, design process, and final solution.
+                </p>
+              </div>
+
+              <div class="section-media-grid two-up">
+                <figure class="media-frame">
+                  <img src="images/team-website-placeholder.jpg" alt="Public-facing team website for the project" />
+                  <figcaption>Include banner picture of public team website.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <h4 class="subsection-title">Design System Collaboration</h4>
+              <div class="text-block">
+                <p>
+                  I collaborated with the primary UX designer to finalize the visual design system used throughout the app. This involved helping define the interface style, layout consistency, and visual hierarchy so the ordering experience felt clear and cohesive.
+                </p>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <h4 class="subsection-title">User Testing &amp; Research</h4>
+              <div class="text-block">
+                <p>
+                  I planned and conducted multiple rounds of usability testing for both the Figma prototype and the beta HTML prototype. I wrote the participant consent script used during testing sessions and developed the interview questions that guided each session.
+                </p>
+
+                <p>
+                  During testing sessions, I observed how users interacted with the prototype and documented areas where they hesitated or experienced confusion. These observations helped reveal opportunities to improve the interface.
+                </p>
+              </div>
+
+              <div class="section-media-grid two-up">
+                <figure class="media-frame">
+                  <img src="images/zoom-interviews-placeholder.jpg" alt="Zoom interview sessions used for usability testing" />
+                  <figcaption>Include picture of zoom interviews.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <h4 class="subsection-title">Research Analysis</h4>
+              <div class="text-block">
+                <p>
+                  After each testing round, I compiled the feedback and identified patterns in user behavior. I summarized usability issues and presented key insights to the team along with recommendations for improvements.
+                </p>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <h4 class="subsection-title">Usability Improvements</h4>
+              <div class="text-block">
+                <p>
+                  Based on the testing results, I proposed adjustments to improve clarity and usability within the interface. These suggestions helped guide the design iterations that followed.
+                </p>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <h4 class="subsection-title">Quality Assurance</h4>
+              <div class="text-block">
+                <p>
+                  I also conducted additional testing by repeatedly running through the critical ordering flow and exploring edge cases. This helped identify inconsistencies or unexpected behaviors that needed to be addressed before the final prototype was completed.
+                </p>
+              </div>
+            </section>
+          </section>
+
+          <!-- Team Collaboration -->
+          <section class="subsection" id="team-collaboration">
+            <h3 class="subsection-title">Team Collaboration</h3>
+            <div class="text-block">
+              <p>
+                Although everyone had their own roles, this project relied heavily on teamwork and could not have been executed without everyone’s collective contributions. Many design decisions were made together as a group, especially when reviewing usability testing results and deciding which improvements should be implemented.
+              </p>
+
+              <p>
+                My main responsibilities were organizing project systems, structuring menu data, supporting the design system, conducting usability testing, and compiling research insights that helped guide design improvements.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- The Solution -->
+      <section class="case-study-section" id="solution">
+        <div class="content-wrapper">
+          <h2 class="section-title">The Solution</h2>
+
+          <div class="text-block">
+            <p>
+              The final solution was a web-based ordering prototype that allows users to browse the menu, customize items, review pricing, and move through checkout in a clear and structured ordering flow.
+            </p>
+
+            <p>Key features include:</p>
+
+            <ul class="bullet-list">
+              <li>Full digital menu browsing</li>
+              <li>Item customization</li>
+              <li>Cart and checkout flow</li>
+              <li>Order status tracking</li>
+            </ul>
+
+            <p>
+              The design focuses on clarity and usability so users can easily move through the ordering process without any sort of confusion.
+            </p>
+
+            <p>
+              My contributions supported both the visible interface and the systems behind the scenes. I helped refine the design through usability testing and design collaboration while also organizing the data, assets, and documentation needed for development.
+            </p>
+          </div>
+
+          <div class="section-media-grid two-up">
+            <figure class="media-frame">
+              <img src="images/final-interface-placeholder.jpg" alt="Final interface of the Pete’s Little Lunch Box ordering app" />
+              <figcaption>Include picture of final interface.</figcaption>
+            </figure>
+          </div>
+
+          <div class="project-link-block">
+            <p>
+              <strong>Live Project Link:</strong>
+              <a href="#" target="_blank" rel="noopener noreferrer">Include live link to final project</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Results -->
+      <section class="case-study-section" id="results">
+        <div class="content-wrapper">
+          <h2 class="section-title">The Results</h2>
+
+          <div class="text-block">
+            <p>
+              The project resulted in a working prototype that demonstrated a complete ordering experience from browsing menu items to checkout and order tracking.
+            </p>
+
+            <p>
+              User testing helped reveal usability issues early in the process, allowing the team to make improvements before the final delivery.
+            </p>
+
+            <p>
+              One of the biggest takeaways from this project was how important organization and structure are when working on collaborative design projects. Clear documentation, well-structured data, and thoughtful user testing all played a role in helping the team deliver a more functional product.
+            </p>
+
+            <p>
+              If this project were developed further, additional rounds of user testing and further refinement of edge cases would help continue improving the ordering experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
 </body>
 </html>
