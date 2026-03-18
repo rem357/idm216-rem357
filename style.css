@@ -14,8 +14,19 @@
 }
 
 /* RESET */
-*,
-*::before,
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 *::after {
     margin: 0;
     padding: 0;
@@ -26,25 +37,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body,
-a,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-figcaption,
-blockquote {
-    text-wrap: pretty;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    text-rendering: optimizeLegibility;
-    line-height: 1.5rem;
-    text-decoration: none;
-}
+/* BASE TYPOGRAPHY */
 
 body {
     font-family: 'Kode Mono', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -52,18 +45,105 @@ body {
     background: var(--background-color);
     min-height: 100vh;
     color: var(--text-color);
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-body a {
+a {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+    text-decoration: none;
     color: var(--title-color);
     font-weight: 600;
 }
+
+p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+h1 {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+h2 {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+h3 {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+h4 {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+h5 {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+h6 {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+li {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+figcaption {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+blockquote {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+}
+
+/* LINKS */
 
 body a:hover {
     color: var(--text-hover-color);
@@ -75,7 +155,16 @@ body a:active {
     transition: color 0.3s ease;
 }
 
+/* IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* PAGE LAYOUT */
+
 .page {
     width: 100%;
     padding-bottom: 4rem;
@@ -87,6 +176,7 @@ body a:active {
 }
 
 /* HEADER */
+
 .case-study-header {
     padding: 2rem 0 1rem 0;
 }
@@ -101,8 +191,8 @@ body a:active {
 }
 
 .case-study-title {
-    font-size: clamp(2rem, 4vw, 3.75rem);
-    line-height: 1.1;
+    font-size: clamp(1.7rem, 3.2vw, 3rem);
+    line-height: 1.15;
     color: var(--title-color);
     margin-bottom: 0.75rem;
 }
@@ -113,7 +203,22 @@ body a:active {
     margin-bottom: 1rem;
 }
 
-/* GENERAL SECTION STYLING */
+/* BANNER */
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* SECTIONS */
+
 .case-study-section {
     padding: 2.5rem 0;
     border-top: 2px solid var(--secondary-color);
@@ -126,12 +231,18 @@ body a:active {
     margin-bottom: 1.5rem;
 }
 
-.subsection,
+.subsection {
+    margin-top: 2rem;
+}
+
 .role-section {
     margin-top: 2rem;
 }
 
-.role-section + .role-section,
+.role-section + .role-section {
+    margin-top: 2.5rem;
+}
+
 .subsection + .subsection {
     margin-top: 2.5rem;
 }
@@ -151,6 +262,7 @@ body a:active {
 }
 
 /* TEXT */
+
 .text-block {
     display: grid;
     gap: 1rem;
@@ -162,6 +274,7 @@ body a:active {
 }
 
 /* LISTS */
+
 .bullet-list {
     padding-left: 1.25rem;
     margin-top: 0.25rem;
@@ -173,20 +286,8 @@ body a:active {
     color: var(--text-color);
 }
 
-/* BANNER */
-.banner {
-    width: 100%;
-    overflow: hidden;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
 /* HERO */
+
 .hero-section {
     padding-top: 1rem;
 }
@@ -209,6 +310,7 @@ body a:active {
 }
 
 /* MEDIA */
+
 .section-media-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -243,7 +345,8 @@ body a:active {
     color: var(--text-color);
 }
 
-/* LINKS */
+/* PROJECT LINK */
+
 .project-link-block {
     margin-top: 1.5rem;
     padding: 1rem 1.25rem;
@@ -253,6 +356,7 @@ body a:active {
 }
 
 /* PERSONA GALLERY */
+
 .persona-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -304,6 +408,7 @@ body a:active {
 }
 
 /* TEAM GALLERY */
+
 .team-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -318,7 +423,6 @@ body a:active {
     border-radius: var(--border-radius);
     overflow: hidden;
     background: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .team-card img {
@@ -327,22 +431,17 @@ body a:active {
     display: block;
 }
 
-.team-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-    border-color: var(--title-color);
-}
 
-.team-card:active {
-    transform: scale(0.99);
-}
 
 /* RESPONSIVE */
+
 @media (max-width: 900px) {
     .persona-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
+@media (max-width: 900px) {
     .team-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -352,60 +451,141 @@ body a:active {
     .page {
         padding-bottom: 2rem;
     }
+}
 
+@media (max-width: 768px) {
     .case-study-header {
         padding: 1.5rem 0 1rem 0;
     }
+}
 
+@media (max-width: 768px) {
     .case-study-section {
         padding: 2rem 0;
     }
+}
 
+@media (max-width: 768px) {
     .content-wrapper {
         width: min(100% - 1.25rem, 1100px);
     }
+}
 
-    .section-media-grid.two-up,
+@media (max-width: 768px) {
+    .section-media-grid.two-up {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
     .section-media-grid.three-up {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 600px) {
-    .persona-gallery,
+    .persona-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
     .team-gallery {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    body,
-    a,
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    li,
-    figcaption,
+    body {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    a {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h4 {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h5 {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h6 {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    li {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    figcaption {
+        line-height: 1.45rem;
+    }
+}
+
+@media (max-width: 480px) {
     blockquote {
         line-height: 1.45rem;
     }
+}
 
+@media (max-width: 480px) {
     .case-study-title {
         margin-bottom: 0.5rem;
     }
+}
 
+@media (max-width: 480px) {
     .section-title {
         margin-bottom: 1rem;
     }
+}
 
+@media (max-width: 480px) {
     .media-frame {
         padding: 0.6rem;
     }
+}
 
+@media (max-width: 480px) {
     .project-link-block {
         padding: 0.9rem 1rem;
     }
