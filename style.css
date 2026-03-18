@@ -26,19 +26,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-.banner {
-    width: 100%;
-    overflow: hidden;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
 body,
 a,
 p,
@@ -186,6 +173,19 @@ body a:active {
     color: var(--text-color);
 }
 
+/* BANNER */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 /* HERO */
 .hero-section {
     padding-top: 1rem;
@@ -252,16 +252,7 @@ body a:active {
     background: rgba(252, 197, 190, 0.18);
 }
 
-/* OPTIONAL IMAGE HOVER */
-.media-frame:hover,
-.hero-frame img:hover {
-    transform: scale(1.01);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-
+/* PERSONA GALLERY */
 .persona-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -271,6 +262,7 @@ body a:active {
 
 .persona-card {
     display: block;
+    position: relative;
     border: 2px solid var(--secondary-color);
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -282,16 +274,6 @@ body a:active {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.persona-card {
-    display: block;
-    position: relative;
-    border: 2px solid var(--secondary-color);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    background: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .persona-card::after {
@@ -307,36 +289,21 @@ body a:active {
     transition: opacity 0.3s ease;
 }
 
-.persona-card:hover::after {
-    opacity: 1;
-}
-
 .persona-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
     border-color: var(--title-color);
 }
 
+.persona-card:hover::after {
+    opacity: 1;
+}
+
 .persona-card:active {
     transform: scale(0.99);
 }
 
-@media (max-width: 900px) {
-    .persona-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .persona-gallery {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-
-
+/* TEAM GALLERY */
 .team-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -346,6 +313,7 @@ body a:active {
 
 .team-card {
     display: block;
+    position: relative;
     border: 2px solid var(--secondary-color);
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -359,54 +327,27 @@ body a:active {
     display: block;
 }
 
-.team-card {
-    display: block;
-    position: relative;
-    border: 2px solid var(--secondary-color);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    background: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-
-.team-card::after {
-    position: absolute;
-    inset: auto 0 0 0;
-    background: rgba(241, 81, 59, 0.9);
-    color: var(--background-color);
-    text-align: center;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.team-card:hover::after {
-    opacity: 1;
-}
-
 .team-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
     border-color: var(--title-color);
 }
 
+.team-card:active {
+    transform: scale(0.99);
+}
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
+    .persona-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .team-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
-    .team-gallery {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-/* RESPONSIVE */
 @media (max-width: 768px) {
     .page {
         padding-bottom: 2rem;
@@ -426,6 +367,13 @@ body a:active {
 
     .section-media-grid.two-up,
     .section-media-grid.three-up {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .persona-gallery,
+    .team-gallery {
         grid-template-columns: 1fr;
     }
 }
